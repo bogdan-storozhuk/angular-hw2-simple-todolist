@@ -1,0 +1,5 @@
+<li>
+  {{ todo.title }} {{ todo.completed }}
+  <input type="checkbox" [(ngModel)]="todo.completed" />
+  <span *ngIf="todo.completed" (click)="removeItem(todo)">X</span>
+</li>

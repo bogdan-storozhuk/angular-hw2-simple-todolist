@@ -1,0 +1,8 @@
+<ul>
+  <app-list-item
+    (onRemoveItem)="removeItem($event)"
+    [todo]="todo"
+    *ngFor="let todo of todoList"
+  >
+  </app-list-item>
+</ul>

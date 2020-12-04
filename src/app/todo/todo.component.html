@@ -1,0 +1,14 @@
+<div>
+  <h2>List todo</h2>
+
+  <app-todo-form (onAddItem)="addNewTodo($event)"></app-todo-form>
+  <app-todo-list
+    (onRemoveItem)="removeItem($event)"
+    [todoList]="todoList"
+  ></app-todo-list>
+
+  <br />
+  <pre>
+      {{ todoList | json }}
+  </pre>
+</div>
